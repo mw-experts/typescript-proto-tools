@@ -1,0 +1,34 @@
+{
+  "name": "@mw-experts/typescript-proto-tools",
+  "version": "0.0.0",
+  "description": "Format, lint and build proto files to work with typescript",
+  "keywords": [
+    "format",
+    "lint",
+    "build",
+    "proto",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Andrey Korovin",
+    "email": "misticwonder@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mw-experts/typescript-proto-tools.git"
+  },
+  "homepage": "https://github.com/mw-experts/typescript-proto-tools#readme",
+  "bin": {
+    "protoc-linux": "protoc/protoc-linux/bin/protoc",
+    "protoc-osx": "protoc/protoc-osx/bin/protoc",
+    "protoc-gen-ts_proto": "node_modules/ts-proto/protoc-gen-ts_proto",
+    "build-protoc-nestjs": "scripts/build-protoc-nestjs.sh"
+  },
+  "scripts": {
+    "update-protoc": "./scripts/update-protoc.sh"
+  },
+  "devDependencies": {
+    "ts-proto": "^1.180.0"
+  }
+}
