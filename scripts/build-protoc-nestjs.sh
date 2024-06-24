@@ -14,4 +14,4 @@ echo "Proto: $proto"
 echo "Out: $out"
 
 mkdir -p "$out"
-protoc-"$os" --plugin="./node_modules/.bin/protoc-gen-ts_proto" --ts_proto_opt=env=node --ts_proto_out="$out" "$proto"
+protoc-"$os" --plugin="./node_modules/.bin/protoc-gen-ts_proto" --ts_proto_opt=nestJs=true --ts_proto_out="$out" "$proto"
